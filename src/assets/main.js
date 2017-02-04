@@ -34,7 +34,7 @@ function getResults(input) {
             myDiv += '<span class="glyphicon glyphicon-ok"></span>';
       //to see if the character is our answer but not in the right place
       //> -1 WHY? the index of will turn -1 in the event of no matching characters in value but for each instance of a character in that value it will iteriate by 1 so 0 ,1 etc
-    }else if (answer.value.indexOf(input.charAt(i)) > -1){
+    }else if (answer.value.indexOf(input.charAt(i)) > -1) {
             myDiv += '<span class="glyphicon glyphicon-transfer"></span>';
         //no match
         }else {
@@ -42,7 +42,7 @@ function getResults(input) {
         }
     }
     //close our divs
-    myDiv = '</div></div>';
+    myDiv += '</div></div>';
     //grab element from the DOM
     document.getElementById('results').innerHTML += myDiv;
 
