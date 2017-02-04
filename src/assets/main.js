@@ -65,7 +65,7 @@ function setMessage(message) {
     document.getElementById('message').innerHTML = message;
 }
 
-function showAnswer(sucess){
+function showAnswer(success){
   //grab code element from the DOM
     let code = document.getElementById('code');
     if (success) {
