@@ -53,7 +53,7 @@ function getResults(input) {
 
 function setHiddenFields() {
   //In order to add a zero to the front of an answer, it must be a string, not a number
-    answer.value = Math.floor(Math.random()*10000).toString;
+    answer.value = Math.floor(Math.random()*10000).toString();
     while (answer.value.length < 4) {
         answer.value += '0';
     }
